@@ -13,10 +13,10 @@ Welcome to the vaccination booking portal, specifically designed for the employe
 class Employee:
 This class is used to represent an employee. It contains an empty default constructor and a parametrized constructor in which all the required fields of an employee are declared, for example: ID, name, password, etc.
 
-<h2>Employee Class</h2>
+<h3>Employee Class</h3>
 <p>This class is used to represent an employee. It contains an empty default constructor and a parametrized constructor in which all the required fields of an employee are declared, for example: ID, name, password, etc.</p>
     
-<h2>GUI Class</h2>
+<h3>GUI Class</h3>
 <p>This class contains all the necessary methods and logic for the user interface. It includes the following methods:</p>
 <ul>
   <li><strong>login():</strong> This method contains the logic for employee login. It uses variables from JFrame, JPanel, JTextField, JLabel, and JButton classes. After the user inputs their ID and password and clicks the login button, an ActionListener (`ac1`) is set up using `login_button.addActionListener(ac1)`. The code inside the action listener checks the ActionEvent (`e`). If it's from the login button, the input is passed to the `Auth()` method of the `Excel` class, which returns an `Employee` object stored in the variable `user`. If `user` is not null, their vaccination status is checked, and after the current frame is disposed, the next method is called accordingly. If the ActionEvent (`e`) is from the reset button, the input fields are cleared. If `e` is from the add new employee button (`add_new_e`), the frame is disposed, and the `add_new_emp()` method is called. </li></ul>
