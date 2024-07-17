@@ -10,9 +10,13 @@ Welcome to the vaccination booking portal, specifically designed for the employe
 </ul>
 
 <h2>Details:</h2>
-<h3>class Employee:</h3>
+class Employee:
 This class is used to represent an employee. It contains an empty default constructor and a parametrized constructor in which all the required fields of an employee are declared, for example: ID, name, password, etc.
 
-<h3>class GUI:</h3>
-This class contains all the necessary methods and logic for the user interface. It contains the following methods:
-login(): This method contains the logic of log in of employee. It uses variables of JFrame, JPanel, JTextField, JLabel and JButton classes. After user has put input for the user_ID field, password field and clicked on the login button, a listening ac1 is set up using 'login_button.addActionListener(ac1)' and the code inside the action listener is executed. Since the ActionEvent e is 'login_button', the input that user put is passed to the Auth() method of class excel, which returns the user object of class Employee which is then stored in the variable user. If user is not null, then their vaccination status is checked and the next method is called accordingly.
+<h2>Employee Class</h2>
+<p>This class is used to represent an employee. It contains an empty default constructor and a parametrized constructor in which all the required fields of an employee are declared, for example: ID, name, password, etc.</p>
+    
+<h2>GUI Class</h2>
+<p>This class contains all the necessary methods and logic for the user interface. It includes the following methods:</p>
+<ul>
+  <li><strong>login():</strong> This method contains the logic for employee login. It uses variables from JFrame, JPanel, JTextField, JLabel, and JButton classes. After the user inputs their ID and password and clicks the login button, an ActionListener (`ac1`) is set up using `login_button.addActionListener(ac1)`. The code inside the action listener checks the ActionEvent (`e`). If it's from the login button, the input is passed to the `Auth()` method of the `Excel` class, which returns an `Employee` object stored in the variable `user`. If `user` is not null, their vaccination status is checked, and after the current frame is disposed, the next method is called accordingly. If the ActionEvent (`e`) is from the reset button, the input fields are cleared. If `e` is from the add new employee button (`add_new_e`), the frame is disposed, and the `add_new_emp()` method is called. </li></ul>
