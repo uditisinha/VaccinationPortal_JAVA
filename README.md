@@ -41,4 +41,4 @@ Welcome to the COVID vaccination booking portal, specifically designed for the e
 </ul>
 
 <h2>Working demo of the project:</h2>
-<video href = "https://github.com/user-attachments/assets/0d48e59c-ea7f-4c93-9965-ca4d05e55ed7"></video>
+<video src = "https://github.com/user-attachments/assets/0d48e59c-ea7f-4c93-9965-ca4d05e55ed7"></video>
