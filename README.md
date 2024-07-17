@@ -1,6 +1,13 @@
 # VaccinationPortal_JAVA
 
-Welcome to the vaccination booking portal, specifically designed for the employees of an organization. This system enables you to easily book your vaccination appointments. This is a simple system created using JAVA, Swing and uses Excel sheet for storing data.
+Welcome to the vaccination booking portal, specifically designed for the employees of an organization. This system enables you to easily book your vaccination appointments.
+
+<h2>Tech Stack Used:</h2>
+<ul>
+    <li><strong>Front-End:</strong> Java Swing</li>
+    <li><strong>Back-End:</strong> Java</li>
+    <li><strong>Libraries:</strong> Apache POI</li>
+</ul>
 
 <h2>The key features are:</h2>    
 <ul>
