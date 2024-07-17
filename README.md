@@ -1,15 +1,15 @@
 # VaccinationPortal_JAVA
 
-Welcome to the vaccination booking portal, specifically designed for the employees of an organization. This system enables you to easily book your vaccination appointments.
+Welcome to the COVID vaccination booking portal, specifically designed for the employees of an organization. This system enables you to easily book your vaccination appointments.
 
-<h2>Tech Stack Used:</h2>
+<h2>Technologies used:</h2>
 <ul>
     <li><strong>Front-End:</strong> Java Swing</li>
     <li><strong>Back-End:</strong> Java</li>
     <li><strong>Libraries:</strong> Apache POI</li>
 </ul>
 
-<h2>The key features are:</h2>    
+<h2>Key features of the website:</h2>    
 <ul>
   <li><strong>Adding Employees:</strong> Employees can be added to the Excel sheet and only these employees can log in and book vaccination appointments.</li>
   <li><strong>Login:</strong> Employees can log in after providing their ID number and password.</li>
@@ -39,3 +39,6 @@ Welcome to the vaccination booking portal, specifically designed for the employe
   <li><strong>Insert(Employee n_user):</strong> This method is called by add_new_emp() to insert a new row for that employee. Similar to update(), connection is established with the xlsv file, then a new row is created. An iteration of i from 0 to 7 is done, with each iteration a new cell is created and its value is set using a switch case. The data is written back to the xlsv file.</li><br>
   <li><strong>Auth(int id,String pass):</strong> This method is called by login() to authorize user based on their input. It returns an object of type Employee. A connection is establish with the xlsv file, the row number and the number of columns is fetched. A nested for loop is used to check each column of each row (the first row is skipped), and based on the iteration number the switch cases are entered for each row. If the ID and password of a row matches with the ID and password inserted by the user, then an Employee object is set with parameters passed to the object, and the object is then returned. If no match is found for any row, the Employee object is set as NULL and returned.</li><br>
 </ul>
+
+<h2>Working demo of the project:</h2>
+<video href = ""></video>
