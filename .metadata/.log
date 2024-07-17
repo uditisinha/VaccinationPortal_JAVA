@@ -249,7 +249,7 @@ class excel_mani{
 	static void Auth() throws IOException
 	{
 		Employee temp = new Employee();
-		String f_path = ".\\data\\office_data1.xlsx";
+		String f_path = "/office_data1.xlsx";
 		
 		FileInputStream in_stream = new FileInputStream(f_path);
 		
@@ -533,7 +533,7 @@ class excel_mani{
 	static void Auth() throws IOException
 	{
 		Employee temp = new Employee();
-		String f_path = ".\\data\\office_data1.xlsx";
+		String f_path = "office_data1.xlsx";
 		
 		FileInputStream in_stream = new FileInputStream(f_path);
 		

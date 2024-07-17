@@ -499,7 +499,7 @@ class GUI {
 							else
 							{
 								clear2();
-								JOptionPane.showMessageDialog(f,"Invalid date according to criateria","Error",JOptionPane.ERROR_MESSAGE);
+								JOptionPane.showMessageDialog(f,"Invalid date according to criteria","Error",JOptionPane.ERROR_MESSAGE);
 							}
 						}
 						else if(user.vacc_type.equals("Covaccine"))
@@ -683,7 +683,7 @@ class GUI {
         Head.setBounds(550,10,1200,40);
         p1.add(Head);
         
-        Ins1 = new JLabel("NOTE: Enter '-' in all unnecessary fields .Date format dd/mm/yyyy");
+        Ins1 = new JLabel("NOTE: Enter '-' in all unnecessary fields. Date format dd/mm/yyyy");
         Ins1.setFont(new Font("Verdana",Font.BOLD,30));
         Ins1.setBounds(250,50,1200,40);
         p1.add(Ins1);
@@ -816,7 +816,7 @@ class GUI {
 }
 class excel extends Employee{
 	static void update(Employee c_user) throws IOException {
-		String f_path = ".\\data\\office_data1.xlsx";
+		String f_path = "vacc_portal/data/office_data1.xlsx";
 		FileInputStream in_stream = new FileInputStream(f_path);
 		XSSFWorkbook workbook = new XSSFWorkbook(in_stream);
 		XSSFSheet sheet = workbook.getSheetAt(0);
@@ -847,18 +847,17 @@ class excel extends Employee{
 		System.out.println("File updated");
 	}
 	static int n_id() throws IOException {
-		String f_path = ".\\data\\office_data1.xlsx";
+		String f_path = "vacc_portal/data/office_data1.xlsx";
 		FileInputStream in_stream = new FileInputStream(f_path);
 		XSSFWorkbook workbook = new XSSFWorkbook(in_stream);
 		XSSFSheet sheet = workbook.getSheetAt(0);
 		workbook.close();
 		int id =sheet.getLastRowNum();
-		System.out.println(id);
 		return id;
 	}
 	static void Insert(Employee n_user) throws IOException{
 		int insl = n_user.e_id-100;//insl-insert location
-		String f_path = ".\\data\\office_data1.xlsx";
+		String f_path = "vacc_portal/data/office_data1.xlsx";
 		FileInputStream in_stream = new FileInputStream(f_path);
 		XSSFWorkbook workbook = new XSSFWorkbook(in_stream);
 		XSSFSheet sheet = workbook.getSheetAt(0);
@@ -914,7 +913,7 @@ class excel extends Employee{
 	}
 	static Employee Auth(int id,String pass) throws IOException
 	{
-		String f_path = ".\\data\\office_data1.xlsx";
+		String f_path = "vacc_portal/data/office_data1.xlsx";
 		FileInputStream in_stream = new FileInputStream(f_path);
 		XSSFWorkbook workbook = new XSSFWorkbook(in_stream);
 		XSSFSheet sheet = workbook.getSheetAt(0);
