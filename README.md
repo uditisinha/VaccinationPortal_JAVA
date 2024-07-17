@@ -9,7 +9,7 @@ Welcome to the vaccination booking portal, specifically designed for the employe
   <li><strong>Book Vaccination:</strong> Users can book their first or second dose after choosing which vaccine they wish to receive (if this is their first dose).</li>
 </ul>
 
-<h2>Details:</h2>
+<h2>Details of Main.java:</h2>
 <h3>Employee Class</h3>
 <p>This class is used to represent an employee. It contains an empty default constructor and a parametrized constructor in which all the required fields of an employee are declared, for example: ID, name, password, etc.</p>
     
